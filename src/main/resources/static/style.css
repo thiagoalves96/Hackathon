@@ -8,7 +8,6 @@ body {
   padding-top: 150px;
   padding-bottom: 150px;
   margin: 0;
-
   font-family: Arial, sans-serif;
 }
 
@@ -209,6 +208,9 @@ iframe {
 
 #map {
   margin-top: 20px;
+  width: 100%;
+  height: 450px; /* Definindo a altura do mapa */
+  border-radius: 8px; /* Bordas arredondadas */
 }
 
 /* Rodapé */

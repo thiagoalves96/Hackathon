@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <meta charset="UTF-8" />
     <title>Perfil do Usuário</title>
     <link rel="stylesheet" href="/style.css" />
   </head>
@@ -30,17 +32,7 @@
       <!-- Seção de Mapa -->
       <section class="mapa-unidades">
         <h2>Unidades de Pronto Atendimento Próximas:</h2>
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29252.526538322316!2d-46.68778275063325!3d-23.584032393304096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spronto%20socorro%20proximo%20a%20mim!5e0!3m2!1spt-BR!2sbr!4v1749313544674!5m2!1spt-BR!2sbr"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+        <div id="map"></div>
       </section>
     </main>
     <!-- Rodapé -->
@@ -49,5 +41,7 @@
     </footer>
 
     <script src="/js/chat.js"></script>
+    <!-- Incluindo o JavaScript do Leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   </body>
 </html>
