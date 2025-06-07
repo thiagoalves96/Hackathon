@@ -34,7 +34,7 @@ main {
 /* Estilos do header */
 header {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background-image: url("/img/imagem-header.webp"); /* Caminho da imagem de fundo */
   background-size: cover; /* A imagem ocupa toda a área do header */
   background-position: center center; /* Centraliza a imagem */
@@ -52,6 +52,39 @@ header {
   margin-bottom: 30px;
 }
 
+/* Estilos para o título h2 da seção */
+.chat-section h2 {
+  font-size: 2rem; /* Tamanho do título */
+  font-weight: 600; /* Tamanho do título em negrito */
+  color: #333; /* Cor inicial do título */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+  text-transform: none; /* Mantém o título com maiúsculas/minúsculas */
+  letter-spacing: 0; /* Sem espaçamento entre as letras */
+  font-family: "Arial", sans-serif; /* Fonte mais suave para o título */
+  padding: 15px; /* Adiciona padding dentro do título */
+  border-radius: 20px; /* Bordas arredondadas */
+  background: linear-gradient(45deg, #007bff, #00c6ff); /* Gradiente de cor */
+  color: white; /* Cor do texto do título */
+  transition: background-color 1s ease, color 1s ease; /* Transição suave de cor */
+}
+
+/* Animação de mudança de cor no título */
+@keyframes colorChange {
+  0% {
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+  }
+  50% {
+    background: linear-gradient(45deg, #ff6347, #ff9966); /* Cor intermediária */
+  }
+  100% {
+    background: linear-gradient(45deg, #007bff, #00c6ff); /* Cor original */
+  }
+}
+
+/* Aplique a animação no título */
+.chat-section h2 {
+  animation: colorChange 5s infinite; /* A animação vai mudar a cor do título de forma contínua */
+}
 .chat-container {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -124,7 +157,7 @@ iframe {
 /* Rodapé */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 3px;
   background-image: url("/img/imagem-header.webp"); /* Caminho da imagem de fundo */
   background-size: cover; /* A imagem ocupa toda a área do header */
   background-position: center center; /* Centraliza a imagem */
@@ -133,6 +166,6 @@ footer {
   bottom: 0;
   left: 0;
   color: white;
-  border-radius: 8px;
+  border-radius: 4px;
   border-top: 1px solid #ccc;
 }
