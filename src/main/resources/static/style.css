@@ -1,12 +1,27 @@
 /* Estilos gerais */
 body {
-  background-color: #f8f9fa;
+  background-color: #d4d4d4;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+/* Container de login */
+.login-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Container de login e seções */
@@ -20,7 +35,9 @@ main {
 header {
   text-align: center;
   padding: 20px;
-  background-color: #007bff;
+  background-image: url("/img/imagem-header.webp"); /* Caminho da imagem de fundo */
+  background-size: cover; /* A imagem ocupa toda a área do header */
+  background-position: center center; /* Centraliza a imagem */
   color: white;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -108,10 +125,14 @@ iframe {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #f1f1f1;
+  background-image: url("/img/imagem-header.webp"); /* Caminho da imagem de fundo */
+  background-size: cover; /* A imagem ocupa toda a área do header */
+  background-position: center center; /* Centraliza a imagem */
   position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
+  color: white;
+  border-radius: 8px;
   border-top: 1px solid #ccc;
 }
