@@ -78,6 +78,7 @@
 		<dependency>
 			<groupId>org.springframework.ai</groupId>
 			<artifactId>spring-ai-starter-model-vertex-ai-gemini</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 
 	</dependencies>
