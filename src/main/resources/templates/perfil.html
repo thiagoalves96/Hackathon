@@ -49,48 +49,7 @@
       <p>&copy; 2025 - Health.io</p>
     </footer>
 
-    <script>
-      // Função para enviar mensagem
-      function sendMessage() {
-        const userInput = document.getElementById("user-input").value;
-        const chatBox = document.getElementById("chat-box");
+    <script src="/js/chat.js"></script>
 
-        // Adiciona a mensagem do usuário
-        if (userInput.trim() !== "") {
-          const userMessage = document.createElement("div");
-          userMessage.classList.add("message", "sent");
-          userMessage.textContent = userInput;
-          chatBox.appendChild(userMessage);
-        }
-
-        // Resposta do chatbot
-        const botMessage = document.createElement("div");
-        botMessage.classList.add("message", "received");
-        botMessage.textContent = getBotResponse(userInput);
-        chatBox.appendChild(botMessage);
-
-        // Limpa o campo de entrada de texto
-        document.getElementById("user-input").value = "";
-
-        // Rola para o final da conversa
-        chatBox.scrollTop = chatBox.scrollHeight;
-      }
-
-      // Função para gerar a resposta do chatbot
-      function getBotResponse(userInput) {
-        const lowerInput = userInput.toLowerCase();
-
-        // Mensagens predefinidas do chatbot
-        if (lowerInput.includes("olá") || lowerInput.includes("oi")) {
-          return "Olá! Como posso te ajudar hoje?";
-        } else if (lowerInput.includes("ajuda")) {
-          return "Claro! Em que posso te ajudar?";
-        } else if (lowerInput.includes("preço")) {
-          return "Os preços variam, posso te ajudar a encontrar o melhor pacote.";
-        } else {
-          return "Desculpe, não entendi sua pergunta. Pode reformular?";
-        }
-      }
-    </script>
   </body>
 </html>
