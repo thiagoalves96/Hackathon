@@ -9,57 +9,56 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Container de login */
-.login-container {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Container de login e seções */
+main {
+  padding: 0px;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
 }
 
-.login-container h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* Estilos do perfil */
+/* Estilos do header */
 header {
   text-align: center;
   padding: 20px;
   background-color: #007bff;
   color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-main {
-  padding: 20px;
+/* Estilos do chat */
+.chat-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 
-/* Chat */
 .chat-container {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 10px;
-  max-width: 600px;
+  padding: 20px;
+  max-width: 700px;
   margin: 0 auto 20px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .chat-box {
-  height: 200px;
+  height: 250px;
   overflow-y: auto;
-  margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
-  padding: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .message.received {
   background-color: #e9ecef;
-  padding: 8px 12px;
+  padding: 10px 15px;
   border-radius: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   display: inline-block;
+  max-width: 70%;
 }
 
 .input-box {
@@ -69,15 +68,40 @@ main {
 
 .input-box input {
   flex: 1;
-  padding: 8px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
 .input-box button {
-  padding: 8px 16px;
+  padding: 10px 20px;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para o mapa */
+.mapa-unidades {
+  margin-top: 30px;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: 0;
+  border-radius: 8px;
+}
+
+#map {
+  margin-top: 20px;
 }
 
 /* Rodapé */
@@ -85,4 +109,9 @@ footer {
   text-align: center;
   padding: 10px;
   background-color: #f1f1f1;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ccc;
 }
