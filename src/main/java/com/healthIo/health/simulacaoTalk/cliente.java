@@ -35,9 +35,7 @@ public class Cliente {
             entradaDados = new DataInputStream(conexaoSocket.getInputStream());
             String resposta = entradaDados.readUTF(); // Lê a resposta como string
             System.out.println("Resposta do servidor: " + resposta);
-
-            // Fechar conexão
-            conexaoSocket.close();
+            
 
         } catch (Exception ex) {
             Logger.getLogger(Cliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
