@@ -1,14 +1,15 @@
-#map {
-  height: 400px;
-  width: 100%;
-}
-.bodyPage {
+/* Estilos gerais */
+body {
   background-color: #f8f9fa;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
+/* Container de login */
 .login-container {
   background-color: #ffffff;
   padding: 30px;
@@ -17,7 +18,71 @@
   width: 100%;
   max-width: 400px;
 }
+
 .login-container h2 {
   margin-bottom: 20px;
   text-align: center;
+}
+
+/* Estilos do perfil */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Chat */
+.chat-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+}
+
+.chat-box {
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+}
+
+.message.received {
+  background-color: #e9ecef;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 8px;
+}
+
+.input-box button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
 }
